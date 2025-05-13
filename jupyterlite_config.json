@@ -1,0 +1,10 @@
+{
+  "jupyterlite": {
+    "distribution": "lab"
+  },
+  "litePlugins": [
+    "@jupyterlite/plugin-pyodide-kernel",
+    "@jupyterlite/plugin-sqlite-kernel",
+    "@jupyterlite/plugin-p5-kernel"
+  ]
+}

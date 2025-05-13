@@ -1,0 +1,2 @@
+jupyterlite[lab]
+jupyterlite-pyodide-kernel

@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install dependencies
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install "jupyterlite[lab]>=0.1.0" jupyterlite-pyodide-kernel
+          pip install -r requirements.txt
 
       - name: Build JupyterLite site
         run: |
@@ -30,5 +30,5 @@ jobs:
       - name: Upload JupyterLite site as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: jupyterlite-site
+          name: jupyter-lite
           path: ./dist
