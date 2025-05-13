@@ -25,7 +25,7 @@ jobs:
 
       - name: Build JupyterLite site
         run: |
-          jupyter lite build --output-dir dist
+          jupyter lite build --contents content --output-dir dist
 
       - name: Upload JupyterLite site as artifact
         uses: actions/upload-artifact@v4
