@@ -1,2 +1,3 @@
 jupyterlite[lab]
 jupyterlite-pyodide-kernel
+jupyterlite-p5-kernel
